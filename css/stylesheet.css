@@ -1,0 +1,65 @@
+<style>
+	* {
+		box-sizing: border-box;
+	}
+.row{
+	width: 100%;
+}
+p{	
+	background-color: #A52A2A;
+	border: 1px solid;
+	padding-top: 25px;	
+	margin: 5px;
+}
+h1{
+	text-align: center;
+	margin-bottom: 15px; 
+}
+#p1,#p2,#p3{
+	width: 100px;
+	text-align: center;
+	position: relative;
+	float: right;
+	padding: 0;
+	border: 1px solid;
+}
+#p1{
+	background-color: yellow;
+}
+#p2{
+	background-color: green;
+}
+#p3{
+	background-color: blue;
+}
+
+/*************** Dekstop ********/
+@media(min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width: 33%;
+	}
+}
+/*************** Tablet *********/
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-1,.col-md-6{
+		float: left;
+	}
+	.col-md-1{			
+		width: 100%;
+	}
+	.col-md-6{			
+		width: 50%;
+	}
+}
+/*************** Mobile ********/
+@media(max-width: 767px){
+	.col-sm-1{
+		float: left;
+	}
+	.col-sm-1{			
+		width: 100%;
+	}	
+}
+
+</style>
